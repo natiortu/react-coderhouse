@@ -20,7 +20,6 @@ const Navbar = () => {
                 </ul>
             </div>
             <CartWidget />
-
         </nav>
     )
 }
