@@ -2,6 +2,8 @@ import "../css/Navbar.css"
 import CartWidget from "./CartWidget"
 
 const Navbar = () => {
+    console.log("Navbar");
+
     return (
         <nav className='nav-container'>
 
