@@ -1,11 +1,12 @@
 import React from 'react'
+import '../css/Item.css';
 import { Button, Card } from 'react-bootstrap'
 
 const Item = ({prod}) => {
 
   return (
-     <Card style={{ width: '18rem', margin: '10px' }}>
-      <Card.Img variant="top" src={prod.img}/>
+     <Card className='card-product'>
+      <Card.Img variant="top" src={prod.img} className='card-product-img'/>
       <Card.Body>
         <Card.Title>{prod.name}</Card.Title>
         <Card.Text>

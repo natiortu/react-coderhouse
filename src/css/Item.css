@@ -1,0 +1,17 @@
+.card-product {
+    background-color: white;
+    width: 18rem;
+    height: 18rem;
+    margin: 10px
+}
+
+.card-product-img {
+    background-color: white;
+}
+
+.card-product:hover {
+    cursor: pointer;
+    transform: scale(1.015);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    filter: brightness(1.02);
+}
