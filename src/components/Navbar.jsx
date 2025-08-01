@@ -1,6 +1,7 @@
 import "../css/Navbar.css"
 import CartWidget from "./CartWidget"
 import { NavLink } from "react-router-dom"
+import Dropdown from 'react-bootstrap/Dropdown';
 
 const Navbar = () => {
 
@@ -11,20 +12,23 @@ const Navbar = () => {
                 <img alt='logo' src='../urban_suplementos_green.png' className="logo" />
             </NavLink>
 
-
-            <NavLink className="a-nav" to='/categories/todos'>Todos los productos</NavLink>
+            <NavLink className="a-nav" to='/'>Todos los productos</NavLink>
             <NavLink className="a-nav" to='/categories/ofertas'>Ofertas</NavLink>
 
-            <div className="dropdown">
-                <button className="btn-categorias">Categorías</button>
-                <ul className="dropdown-menu">
-                    <li><NavLink to='/categories/proteinas'>Proteínas</NavLink></li>
-                    <li><NavLink to='/categories/ganadoresdepeso'>Ganadores de masa</NavLink></li>
-                    <li><NavLink to='/categories/quemadoresdegrasa'>Quemadores de grasa</NavLink></li>
-                    <li><NavLink to='/categories/creatinas'>Creatinas</NavLink></li>
-                    <li><NavLink to='/categories/vitaminasyminerales'>Vitaminas y minerales</NavLink></li>
-                </ul>
-            </div>
+            <Dropdown>
+                <Dropdown.Toggle variant="" className="btn-categorias">
+                    Categorías
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                    <Dropdown.Item as={NavLink} to="/categories/proteinas">Proteínas</Dropdown.Item>
+                    <Dropdown.Item as={NavLink} to="/categories/ganadoresdepeso">Ganadores de masa</Dropdown.Item>
+                    <Dropdown.Item as={NavLink} to="/categories/quemadoresdegrasa">Quemadores de grasa</Dropdown.Item>
+                    <Dropdown.Item as={NavLink} to="/categories/creatinas">Creatinas</Dropdown.Item>
+                    <Dropdown.Item as={NavLink} to="/categories/vitaminasyminerales">Vitaminas y minerales</Dropdown.Item>
+                </Dropdown.Menu>
+            </Dropdown>
+
             <CartWidget />
         </nav>
     )

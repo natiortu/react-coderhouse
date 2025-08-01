@@ -120,16 +120,15 @@ const products = [
     //     img: '../ganador_de_peso_1.png'
     // },
 
-    // GANADOR DE PESO
-    // {
-    //     id: '014',
-    //     name: "Mass Gainer 3Kg Chocolate",
-    //     description: 'Ganadores de peso',
-    //     price: 18000,
-    //     stock: 30,
-    //     category: 'ganadoresdepeso',
-    //     img: '../ganador_de_peso_1.png'
-    // },
+    {
+        id: '014',
+        name: "Quemador Hydroxy Max Night Ena ",
+        description: 'Quemador de grasa',
+        price: 18500,
+        stock: 15,
+        category: 'quemadoresdegrasa',
+        img: '../quemador.png'
+    },
 
     // VITAMINAS Y MINERALES
     {
