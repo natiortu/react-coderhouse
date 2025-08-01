@@ -1,7 +1,7 @@
 const products = [
     {
         id: '01',
-        name: 'Proteína Whey',
+        name: 'Whey Protein True Made Ena',
         description: 'Suplemento Proteico',
         price: 500,
         stock: 15,
@@ -10,7 +10,7 @@ const products = [
     },
     {
         id: '02',
-        name: 'Proteína Star',
+        name: 'Whey Protein Star Nutrition',
         description: 'Suplemento Proteico',
         price: 600,
         stock: 10,
@@ -20,7 +20,7 @@ const products = [
     {
         id: '03',
         name: 'Creatina Monohidrato HTN',
-        description: 'Creatina ',
+        description: 'Creatina',
         price: 1000,
         stock: 9,
         category: 'creatinas',
@@ -29,8 +29,8 @@ const products = [
     ,
     {
         id: '04',
-        name: 'Mutant Mass',
-        description: 'Ganador de peso ',
+        name: 'Mutant Mass Star Nutrition',
+        description: 'Ganador de peso',
         price: 1500,
         stock: 30,
         category: 'ganadoresdepeso',
@@ -38,8 +38,8 @@ const products = [
     },
     {
         id: '05',
-        name: "Whey Protein Isolate",
-        description: 'Suplemento Proteico ',
+        name: "Xtrenght Advanced Whey Protein",
+        description: 'Suplemento Proteico',
         category: 'proteinas',
         price: 15000,
         stock: 30,
@@ -47,7 +47,8 @@ const products = [
     },
     {
         id: '06',
-        name: "Proteína Chocolate",
+        name: "Whey Protein Star Nutrition Doy Pack",
+        description: 'Suplemento Proteico',
         category: 'proteinas',
         price: 13000,
         stock: 30,
@@ -55,7 +56,8 @@ const products = [
     },
     {
         id: '07',
-        name: "Proteína Vainilla",
+        name: "Whey Protein Ena 100% Sport Performance",
+        description: 'Suplemento Proteico',
         category: 'proteinas',
         price: 16000,
         stock: 30,
@@ -63,7 +65,7 @@ const products = [
     },
     {
         id: '08',
-        name: "Cafeína",
+        name: "Cafeína Star Nutrition",
         description: "Cafeína",
         price: 15500,
         stock: 30,
@@ -72,31 +74,31 @@ const products = [
     },
     {
         id: '09',
-        name: "Proteína Whey Body Advance",
+        name: "Whey Protein 910 g Body Advance",
         description: "Suplemento Proteico",
         price: 14800,
         stock: 30,
         category: 'proteinas',
         img: '../proteina_5.png'
     },
-    {
-        id: '010',
-        name: "Whey Protein Cookies & Cream",
-        description: "Suplemento Proteico",
-        price: 15200,
-        stock: 30,
-        category: 'proteinas',
-        img: '../ganador_de_peso_1.png'
-    },
-    {
-        id: '011',
-        name: "Proteína de Arveja Natural",
-        description: "Suplemento Proteico",
-        price: 12500,
-        stock: 30,
-        category: 'proteinas',
-        img: '../ganador_de_peso_1.png'
-    },
+    // {
+    //     id: '010',
+    //     name: "Whey Protein Cookies & Cream",
+    //     description: "Suplemento Proteico",
+    //     price: 15200,
+    //     stock: 30,
+    //     category: 'proteinas',
+    //     img: '../ganador_de_peso_1.png'
+    // },
+    // {
+    //     id: '011',
+    //     name: "Proteína de Arveja Natural",
+    //     description: "Suplemento Proteico",
+    //     price: 12500,
+    //     stock: 30,
+    //     category: 'proteinas',
+    //     img: '../ganador_de_peso_1.png'
+    // },
 
     // CREATINAS
     // {
@@ -119,43 +121,43 @@ const products = [
     // },
 
     // GANADOR DE PESO
-    {
-        id: '014',
-        name: "Mass Gainer 3Kg Chocolate",
-        description: 'Ganadores de peso',
-        price: 18000,
-        stock: 30,
-        category: 'ganadoresdepeso',
-        img: '../ganador_de_peso_1.png'
-    },
+    // {
+    //     id: '014',
+    //     name: "Mass Gainer 3Kg Chocolate",
+    //     description: 'Ganadores de peso',
+    //     price: 18000,
+    //     stock: 30,
+    //     category: 'ganadoresdepeso',
+    //     img: '../ganador_de_peso_1.png'
+    // },
 
     // VITAMINAS Y MINERALES
     {
         id: '015',
-        name: "Multivitamínico A-Z",
-        description: "Vitaminas y Minerales",
+        name: "Multivitamínico",
+        description: "Multivitamínico",
         price: 7500,
         stock: 30,
         category: 'vitaminasyminerales',
-        img: '../ganador_de_peso_1.png'
+        img: '../multivitaminico_1.png'
     },
     {
         id: '016',
-        name: "Vitamina D3 5000UI",
+        name: "Vitamina D",
         description: "Vitaminas y Minerales",
         price: 5900,
         stock: 30,
         category: 'vitaminasyminerales',
-        img: '../ganador_de_peso_1.png'
+        img: '../vitamina_d.png'
     },
     {
         id: '017',
-        name: "Magnesio Quelado 120 caps",
+        name: "Citrato de Magnesio",
         description: "Vitaminas y Minerales",
         price: 6800,
         stock: 30,
         category: 'vitaminasyminerales',
-        img: '../ganador_de_peso_1.png'
+        img: '../citrato_de_magnesio.png'
     }
 ]
 
