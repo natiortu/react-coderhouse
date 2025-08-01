@@ -1,0 +1,10 @@
+.div-item-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.img-item-detail {
+    height: 30rem;
+    background-color: white;
+}

@@ -6,7 +6,6 @@ import { useParams } from 'react-router-dom'
 const ItemDetailContainer = () => {
     const [detalle, setDetalle] = useState({})
     const { id } = useParams();
-    console.log(id, 'useParams');
 
     useEffect(() => {
         getOneProduct(id)
@@ -14,7 +13,6 @@ const ItemDetailContainer = () => {
             .catch((error) => console.log(error))
     }, [id])
 
-    console.log(detalle);
     return (
         <>
             <ItemDetail detalle={detalle} />

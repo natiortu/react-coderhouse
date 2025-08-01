@@ -11,23 +11,22 @@ const ItemListContainer = ({ greeting }) => {
     const [data, setData] = useState([])
     const { category } = useParams()
 
-    //console.log(category, 'categoria');
-
     useEffect(() => {
         getProducts() //Se llama a la funcion que retorna una promise
             .then((res) => {
                 if (category) {
-                    setData(res.filter((prod) =>prod.category === category))
-                } else { 
-                   setData(res);
+                    setData(res.filter((prod) => prod.category === category))
+                } else {
+                    setData(res);
                 }
             })
             .catch((error) => console.log(error))
     }, [category])
-
+    
+    // console.log(greeting);
     return (
         <div className="div-greeting">
-            <h1 className="h1-greeting">{greeting}</h1>
+            {/* <h1 className="h1-greeting">{greeting}</h1> */}
             <ItemList data={data} />
         </div>
     )

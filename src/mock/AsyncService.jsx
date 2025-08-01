@@ -156,7 +156,7 @@ const products = [
         description: "Vitaminas y Minerales",
         price: 6800,
         stock: 30,
-        category: 'vitaminasyminerales',
+        category: 'ofertas',
         img: '../citrato_de_magnesio.png'
     }
 ]
@@ -182,7 +182,7 @@ export const getOneProduct = (id) => {
     return new Promise ((resolve)=>{
         setTimeout(()=>{
             //buscar prod con el id recibido por parametro
-            let oneProduct = products.find((prod)=> prod.id === parseInt(id))
+            let oneProduct = products.find((prod)=> prod.id === id)
             resolve(oneProduct)
         },2000)
     })
