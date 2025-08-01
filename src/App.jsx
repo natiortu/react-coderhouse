@@ -19,7 +19,7 @@ function App() {
         <Route path= '/' element={<ItemListContainer greeting="Bienvenido a Urban Suplementos" />}/>
         <Route path= '/categories/:category' element={<ItemListContainer greeting="Categoría: " />}/>
         <Route path= '/item/:id' element={ <ItemDetailContainer />} />
-        <Route path='#' element={ <NotFound />} />
+        <Route path='*' element={ <NotFound />} />
 
       </Routes>      
      

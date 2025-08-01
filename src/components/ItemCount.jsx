@@ -1,24 +1,35 @@
-import {useState} from 'react'
+import { useState } from 'react'
 
-const ItemCount = () => {
+const ItemCount = ({ stock, agregarProductos }) => {
 
-    const [count, setCount]=useState(1)
+    const [count, setCount] = useState(1)
 
     const sumar = () => {
-        setCount(count + 1);
+        if (count < stock) {
+            setCount(count + 1);
+        }
     }
 
     const restar = () => {
-        setCount(count - 1);
+        if (count > 0) {
+            setCount(count - 1);
+        }
     }
 
-    console.log("count");
+    const comprar = () => {
+        agregarProductos(count);
+    }
 
     return (
-        <div>
-            <button className='btn btn-danger' onClick={restar}>-</button>
-            <span className='btn'>{count}</span>
-            <button className='btn btn-success' onClick={sumar}>+</button>
+        <div className="d-flex justify-content-center flex-column gap-3">
+            <div className="d-flex align-items-center gap-2">
+                <button className='btn btn-danger' onClick={restar}>-</button>
+                <span className="btn btn-outline-secondary px-3 py-1">{count}</span>
+                <button className='btn btn-success' onClick={sumar}>+</button>
+            </div>
+            <div>
+                <button className='btn btn-primary w-100' disabled={count === 0} onClick={comprar}>Comprar</button>
+            </div>
         </div>
     )
 }

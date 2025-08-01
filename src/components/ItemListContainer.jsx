@@ -7,12 +7,11 @@ import { useParams } from 'react-router-dom';
 
 const ItemListContainer = ({ greeting }) => {
 
-    //Estado donde se van a almacenar los productos
     const [data, setData] = useState([])
     const { category } = useParams()
 
     useEffect(() => {
-        getProducts() //Se llama a la funcion que retorna una promise
+        getProducts()
             .then((res) => {
                 if (category) {
                     setData(res.filter((prod) => prod.category === category))
@@ -23,7 +22,6 @@ const ItemListContainer = ({ greeting }) => {
             .catch((error) => console.log(error))
     }, [category])
     
-    // console.log(greeting);
     return (
         <div className="div-greeting">
             {/* <h1 className="h1-greeting">{greeting}</h1> */}
