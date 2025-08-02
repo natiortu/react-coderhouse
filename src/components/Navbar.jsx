@@ -35,7 +35,7 @@ const Navbar = () => {
             </Dropdown>
 
             {/* render condicional */}
-            { cart.length > 0 && <NavLink to='/cart' style={'text-decoration: none'} > <CartWidget /> </NavLink> }
+            { cart.length > 0 && <NavLink to='/cart' style={{ textDecoration: 'none' }} > <CartWidget /> </NavLink> }
         </nav>
     )
 }
