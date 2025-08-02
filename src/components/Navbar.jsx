@@ -2,8 +2,13 @@ import "../css/Navbar.css"
 import CartWidget from "./CartWidget"
 import { NavLink } from "react-router-dom"
 import Dropdown from 'react-bootstrap/Dropdown';
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
+import { Nav } from "react-bootstrap";
 
 const Navbar = () => {
+
+    const {cart} = useContext(CartContext);
 
     return (
         <nav className='nav-container'>
@@ -29,7 +34,8 @@ const Navbar = () => {
                 </Dropdown.Menu>
             </Dropdown>
 
-            <CartWidget />
+            {/* render condicional */}
+            { cart.length > 0 && <NavLink to='/cart' style={'text-decoration: none'} > <CartWidget /> </NavLink> }
         </nav>
     )
 }

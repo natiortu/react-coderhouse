@@ -3,9 +3,9 @@ import CartIcon from "./CartIcon"
 
 const CartWidget = () => {
 
-    return(
+    return (
         <div className="div-nav">
-            <CartIcon/>
+            <CartIcon />
         </div>
     )
 }
