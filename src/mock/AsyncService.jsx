@@ -2,7 +2,7 @@ const products = [
     {
         id: '01',
         name: 'Whey Protein True Made Ena',
-        description: 'Suplemento Proteico',
+        description: 'Suplemento deportivo instantáneo a base de proteínas concentradas de alto valor biológico, extraídas de suero de la leche. Sabor cookies & cream. Beneficios: Brinda una excelente calidad de proteínas y de rápida absorción durante el entrenamiento, garantizando una efectiva y rápida recuperación del tejido muscular evitando lesiones. Contribuye en el desarrollo y la definición de la masa muscular, así como ayuda a recuperar nutrientes y mejorar el rendimiento de la performance. Modo de uso: Mezclar una medida 31g (cuchara medidora) y agregar 200 cm3 de agua o leche (preferentemente descremada), agitar y consumir. Para lograr óptimos resultados tomarlo con agua fría. Ingesta diaria sugerida: 2 medidas (62g).',
         price: 500,
         stock: 15,
         category: 'proteinas',
@@ -11,7 +11,7 @@ const products = [
     {
         id: '02',
         name: 'Whey Protein Star Nutrition',
-        description: 'Suplemento Proteico',
+        description: 'Suplemento dietario en polvo dietético para preparar bebida a base de proteínas de suero. Compuesta por ultra concentrado, aislado e hidrolizado de suero de máxima pureza, obtenidos por métodos no agresivos que garantizan la calidad y estabilidad del producto. Su agradable sabor y alta disolución lo convierten en la opción inteligente a la hora de agregar proteínas de alto valor biológico a nuestra dieta, o como parte de un programa nutricional deportivo. Modo de uso: Mezclar 1 medida de Platinum Whey Protein en 200cm3 de agua o leche descremada. Consumir 1 hora antes del entrenamiento, luego del mismo o simplemente en cualquier momento del día para alcanzar tus necesidades proteicas.',
         price: 600,
         stock: 10,
         category: 'proteinas',
