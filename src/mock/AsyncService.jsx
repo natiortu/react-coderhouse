@@ -20,7 +20,7 @@ const products = [
     {
         id: '03',
         name: 'Creatina Monohidrato HTN',
-        description: 'Creatina',
+        description: 'a Creatina es una sustancia ampliamente utilizada por deportistas debido a su capacidad para liberar más energía, fortaleciendo la fuerza muscular y proporcionando mayor resistencia durante períodos más prolongados, así como una recuperación más rápida y eficaz después del entrenamiento. El consumo continuado de creatina puede contribuir al incremento de masa muscular derivado del entrenamiento, ya sea estimulando la síntesis de proteínas musculares o permitiendo la realización de entrenamientos de mayor intensidad. Creatine micronized HTN se caracteriza por su alta calidad y pureza. Se elabora a partir de Creatina Monohidratada Micronizada, cuyas partículas de tamaño microscópico favorecen una óptima absorción por el organismo.',
         price: 1000,
         stock: 9,
         category: 'creatinas',
@@ -30,7 +30,7 @@ const products = [
     {
         id: '04',
         name: 'Mutant Mass Star Nutrition',
-        description: 'Ganador de peso',
+        description: 'Mutant Mass es un ganador de peso con alto contenido de proteínas. Aumentar el volumen muscular requiere entrenamiento duro y una adecuada nutrición. Cada cuerpo es diferente y algunos requieren de un extra para lograr su objetivo. Mutant Mass aporta esa cantidad extra de proteínas, carbohidratos, minerales, vitaminas y fibras específicas para cumplir tus metas.',
         price: 1500,
         stock: 30,
         category: 'ganadoresdepeso',
@@ -39,7 +39,7 @@ const products = [
     {
         id: '05',
         name: "Xtrenght Advanced Whey Protein",
-        description: 'Suplemento Proteico',
+        description: 'Con Xtrenght Nutrition Advanced Whey Protein sabor banana, disfruta de un suplemento en polvo de alta calidad que te ayudará a alcanzar tus objetivos nutricionales y deportivos. Este producto de 907g contiene proteínas aisladas de suero ultrapura, proteína hidrolizada de suero y concentrado de proteína de suero de leche, que te proporcionarán 24g de proteínas por porción para apoyar el crecimiento y mantenimiento de tus músculos. Además, está enriquecido con vitamina C, óxido de zinc, tripicolinato de cromo y otros ingredientes esenciales para mantener una buena salud y mejorar tu rendimiento deportivo.',
         category: 'proteinas',
         price: 15000,
         stock: 30,
@@ -48,7 +48,7 @@ const products = [
     {
         id: '06',
         name: "Whey Protein Star Nutrition Doy Pack",
-        description: 'Suplemento Proteico',
+        description: 'Suplemento Dietario a base de Ultra Concentrado de proteínas de Suero Lacteo. Fue desarrollada por nuestros investigadores para satisfacer las necesidades de los atletas, contiene todos los aminoácidos esenciales y no esenciales necesarios para construir la masa muscular luego del entrenamiento intenso de corta y larga duración.Posee la más pura proteína de suero microfiltrada a baja temperatura y ultrafiltrado para asegurar la más alta calidad, además posee L-Glutamina y Aminoácidos de cadena Ramificada (BCAAs), posee todas las fracciones de la proteína de suero como Beta Lacto globulina, alpha lacto albumina, glicomacropeptidos, inmunoglobulina, lactoferina, serum albúmina y lactoperioxidasa.',
         category: 'proteinas',
         price: 13000,
         stock: 30,
@@ -57,7 +57,7 @@ const products = [
     {
         id: '07',
         name: "Whey Protein Ena 100% Sport Performance",
-        description: 'Suplemento Proteico',
+        description: 'La suplementación con proteínas de suero (Whey protein) es ideal para complementar tus desayunos, tus meriendas y tu snack recovery post entreno. Los 20 gs de proteínas por porción de 100% WHEY la posicionan como una gran opción para toda la población físicamente activa, tanto hombres como mujeres. La calidad de 100% WHEY es ideal para favorecer la síntesis de masa muscular ya que es rica en aminoácidos ramificados conocidos como BCAA. Colocar una medida (scoop) en un shaker ENA y agregar 200cm3 de agua o leche (preferentemente descremada), agitar y consumir en tus desayunos o meriendas.',
         category: 'proteinas',
         price: 16000,
         stock: 30,
@@ -66,7 +66,7 @@ const products = [
     {
         id: '08',
         name: "Cafeína Star Nutrition",
-        description: "Cafeína",
+        description: "Suplemento dietario a base de Cafeína en cápsula. Libre de gluten. Sin TACC. Apto Vegano.",
         price: 15500,
         stock: 30,
         category: 'vitaminasyminerales',
@@ -75,66 +75,26 @@ const products = [
     {
         id: '09',
         name: "Whey Protein 910 g Body Advance",
-        description: "Suplemento Proteico",
+        description: "Marca indiscutible y elegida por los referentes del fisicoculturismo, atletas ultra exigentes para llegar a sus objetivos y se vean realmente reflejados en la tarima. Todos los fisicoculturistas, levantadores de pesas olímpicos y atletas en general, siempre acompañan su entrenamiento con una dieta alta en proteínas para maximizar sus resultados como también estar al 100% desde el punto de vista de la salud, entrenamiento y bienestar. La proteína de suero de leche sin duda acompaña al atleta para su máxima recuperación y nutrición. Si estás buscando un suplemento de calidad y que se ajuste a tus necesidades este producto es el indicado. La proteína de suero de contiene en su fórmula todos los beneficios de la proteína de suero (WPC = Whey Protein Concentrate) al 80%. Si esto es poco este producto de increíble sabor y disolución con tan solo una cuchara.",
         price: 14800,
         stock: 30,
         category: 'proteinas',
         img: '../proteina_5.png'
-    },
-    // {
-    //     id: '010',
-    //     name: "Whey Protein Cookies & Cream",
-    //     description: "Suplemento Proteico",
-    //     price: 15200,
-    //     stock: 30,
-    //     category: 'proteinas',
-    //     img: '../ganador_de_peso_1.png'
-    // },
-    // {
-    //     id: '011',
-    //     name: "Proteína de Arveja Natural",
-    //     description: "Suplemento Proteico",
-    //     price: 12500,
-    //     stock: 30,
-    //     category: 'proteinas',
-    //     img: '../ganador_de_peso_1.png'
-    // },
-
-    // CREATINAS
-    // {
-    //     id: '012',
-    //     name: "Creatina Monohidratada 300g",
-    //     description: "Creatina",
-    //     price: 9000,
-    //     stock: 30,
-    //     category: 'creatinas',
-    //     img: '../ganador_de_peso_1.png'
-    // },
-    // {
-    //     id: '013',
-    //     name: "Creatina Micronizada 500g",
-    //     description: "Creatina",
-    //     price: 12500,
-    //     stock: 30,
-    //     category: 'creatinas',
-    //     img: '../ganador_de_peso_1.png'
-    // },
+    },  
 
     {
         id: '014',
-        name: "Quemador Hydroxy Max Night Ena ",
-        description: 'Quemador de grasa',
+        name: "Quemador Hydroxy Max Night Ena",
+        description: 'Potente termogénico que ayuda al descenso de peso. A base de garcinia, taurina, té verde, naranjas amargas, carnitina, tirosina, guaraná, ginseng siberiano y uva ursi, una combinación única que ofrece una experiencia excepcional. Hydroxy Max es un poderoso termogénico que ayuda a aumentar la tasa metabólica. Tiene todo lo necesario para entrenar con intensidad y esculpir el cuerpo deseado.',
         price: 18500,
         stock: 15,
         category: 'quemadoresdegrasa',
         img: '../quemador.png'
     },
-
-    // VITAMINAS Y MINERALES
     {
         id: '015',
         name: "Multivitamínico",
-        description: "Multivitamínico",
+        description: "Suplemento Dietario a Base de Vitaminas y Minerales en comprimidos. Libre de Gluten. Sin TACC. Supera el valor diario de Vitaminas A, C, D, E, B1, B2, B3, B6, B12, Niacina, Ácido Pantoténico, Cobre. Suplementa dietas insuficientes, consulte a su médico y/o nutricionista. No consumir en caso de embarazo o lactancia. Consumir este producto de acuerdo a las recomendaciones de ingesta diaria establecidas en el rótulo. El consumo de suplementos dietarios no reemplaza una dieta variada y equilibrada. Este producto está indicado para personas que realizan ejercicio físico. ",
         price: 7500,
         stock: 30,
         category: 'vitaminasyminerales',
@@ -143,7 +103,7 @@ const products = [
     {
         id: '016',
         name: "Vitamina D",
-        description: "Vitaminas y Minerales",
+        description: "Potencia tu bienestar con nuestra fórmula exclusiva de Vitamina D. Cada comprimido está diseñado para ofrecer este nutriente esencial, promoviendo la salud ósea, muscular y general.",
         price: 5900,
         stock: 30,
         category: 'vitaminasyminerales',
@@ -152,7 +112,7 @@ const products = [
     {
         id: '017',
         name: "Citrato de Magnesio",
-        description: "Vitaminas y Minerales",
+        description: "El Citrato de Magnesio es un suplemento en polvo de alta calidad que ayuda a reducir la fatiga mental, aumentar la alcalinidad corporal, mejorar el sueño y disminuir el estrés. Contribuye al fortalecimiento de huesos y músculos. Es recomendable para personas con deficiencias de este mineral esencial. Se aconseja la consulta con un profesional de la salud para un uso adecuado. La dosis sugerida es de 1 gramo por toma, dos veces al día, disuelto en agua o jugo. El producto viene en un envase sellado con número de lote y fecha de caducidad.",
         price: 6800,
         stock: 30,
         category: 'ofertas',
@@ -160,7 +120,7 @@ const products = [
     }
 ]
 
-//crear una promesaw que retorne el array de productos
+//crear una promesa que retorne el array de productos
 
 export const getProducts = () => {
     let error = false
