@@ -12,7 +12,7 @@ const ItemDetail = ({ detalle }) => {
     addItem(detalle, cantidad)
   }
 
-  console.log("carrito: " + cart);
+  //console.log("carrito: " + cart);
 
   return (
     <div className='div-item-detail'>

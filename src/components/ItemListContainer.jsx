@@ -5,6 +5,8 @@ import { getProducts } from '../mock/AsyncService';
 import ItemList from '../components/ItemList'
 import { useParams } from 'react-router-dom';
 import LoaderComponent from './LoaderComponent';
+import { collection, getDocs, query, where } from 'firebase/firestore';
+import { db } from '../service/firebase';
 
 const ItemListContainer = ({ greeting }) => {
 
@@ -12,19 +14,42 @@ const ItemListContainer = ({ greeting }) => {
     const { category } = useParams()
     const [loading, setLoading] = useState(false);
 
+    //firebase
+
     useEffect(() => {
         setLoading(true);
-        getProducts()
-            .then((res) => {
-                if (category) {
-                    setData(res.filter((prod) => prod.category === category))
-                } else {
-                    setData(res);
-                }
+        const productsCollection = category ? query(collection(db, 'productos'), where("category", "==", category)) : collection(db, "productos") // referencia de la bd               
+        getDocs(productsCollection)
+        .then((res) => {
+            const list = res.docs.map((doc) => {
+                return{
+                    id:doc.id,
+                    ...doc.data()
+                };
             })
-            .catch((error) => console.log(error))
-            .finally(() => setLoading(false))
-    }, [category])
+            setData(list)
+        })
+        .catch((error) => console.log(error))
+        .finally(() =>setLoading(false))
+    }, [category]);
+
+
+
+    //promise
+
+    // useEffect(() => {
+    //     setLoading(true);
+    //     getProducts()
+    //         .then((res) => {
+    //             if (category) {
+    //                 setData(res.filter((prod) => prod.category === category))
+    //             } else {
+    //                 setData(res);
+    //             }
+    //         })
+    //         .catch((error) => console.log(error))
+    //         .finally(() => setLoading(false))
+    // }, [category])
 
     return (
         <>
