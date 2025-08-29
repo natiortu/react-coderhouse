@@ -1,4 +1,8 @@
-.h1-greeting {
+.div-no-products {
     text-align: center;
-    padding: 7rem;
+    padding: 10rem;
+}
+
+.link-see-all-products {
+    margin-top: 20px;
 }

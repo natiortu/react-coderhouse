@@ -1,7 +1,7 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
+import React from 'react'
 
-const EmptyCar = () => {
+const EmptyCart = () => {
   return (
     <div>
       <h2> El carrito de compras está vacío. </h2>
@@ -11,4 +11,4 @@ const EmptyCar = () => {
   )
 }
 
-export default EmptyCar
+export default EmptyCart

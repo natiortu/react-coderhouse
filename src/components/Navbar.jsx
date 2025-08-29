@@ -1,10 +1,10 @@
 import "../css/Navbar.css"
-import CartWidget from "./CartWidget"
-import { NavLink } from "react-router-dom"
-import Dropdown from 'react-bootstrap/Dropdown';
-import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import { Nav } from "react-bootstrap";
+import { NavLink } from "react-router-dom"
+import { useContext } from "react";
+import CartWidget from "./CartWidget"
+import Dropdown from 'react-bootstrap/Dropdown';
 
 const Navbar = () => {
 

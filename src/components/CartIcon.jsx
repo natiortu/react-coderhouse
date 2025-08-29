@@ -1,6 +1,6 @@
 import "../css/CartIcon.css"
-import { useContext } from "react"
 import { CartContext } from "../context/CartContext";
+import { useContext } from "react"
 
 const CartIcon = () => {
   

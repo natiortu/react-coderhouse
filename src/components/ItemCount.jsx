@@ -21,16 +21,22 @@ const ItemCount = ({ stock, agregarProductos }) => {
     }
 
     return (
-        <div className="d-flex justify-content-center flex-column gap-3">
-            <div className="d-flex align-items-center gap-2">
-                <button className='btn btn-danger' onClick={restar}>-</button>
-                <span className="btn btn-outline-secondary px-3 py-1">{count}</span>
-                <button className='btn btn-success' onClick={sumar}>+</button>
-            </div>
-            <div>
-                <button className='btn btn-primary w-100' disabled={count === 0} onClick={comprar}>Comprar</button>
-            </div>
-        </div>
+        <>
+            {stock > 0
+                ?
+                <div className="d-flex justify-content-center flex-column gap-3">
+                    <div className="d-flex align-items-center gap-2">
+                        <button className='btn btn-danger' onClick={restar}>-</button>
+                        <span className="btn btn-outline-secondary px-3 py-1">{count}</span>
+                        <button className='btn btn-success' onClick={sumar}>+</button>
+                    </div>
+                    <div>
+                        <button className='btn btn-primary w-100' disabled={count === 0 || stock === 0} onClick={comprar}>Agregar al carrito</button>
+                    </div>
+                </div>
+                : <div> Sin stock</div>
+            }
+        </>
     )
 }
 
