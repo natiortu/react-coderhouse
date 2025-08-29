@@ -18,8 +18,6 @@ const Checkout = () => {
         )
     }
 
-    //console.log(buyer);
-
     //validaciones 
     // opc 1: agregar validaciones aca NO USAR ALERT. Validar que el carrito no esté vacio
     // opc 2: usar libreria useForm
