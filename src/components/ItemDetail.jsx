@@ -15,10 +15,14 @@ const ItemDetail = ({ detalle }) => {
     Swal.fire({
       position: 'top-end',
       icon: 'success',
-      title: `Agregaste ${detalle.name} al carrito`,
-      showCancelButton: false,
-      showConfirmButton: false,
-      timer: 1000
+      title: `Agregaste ${detalle.name} al carrito.`,
+      timer: 3000,
+      didOpen: () => {
+        Swal.getTitle().style.fontSize = '20px'
+      },
+      customClass: {
+        title: 'swal-title-white'
+      }
     })
   }
 
@@ -29,7 +33,7 @@ const ItemDetail = ({ detalle }) => {
       <h1 className="my-4 fw-bold">{detalle.name}</h1>
       <p className="fs-6">{stockActualizado} unidades disponibles</p>
       <img className="img-item-detail" alt={detalle.name} src={detalle.img} />
-      <p className="p-item-description">{detalle.description}</p>   
+      <p className="p-item-description">{detalle.description}</p>
       <p className="fs-3">
         {new Intl.NumberFormat('es-AR', {
           style: 'currency',

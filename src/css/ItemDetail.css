@@ -17,3 +17,11 @@
     margin-top: 20px;
     margin-bottom: 30px;
 }
+
+.swal-title-white {
+  background-color: white;
+  color: black;
+  display: inline-block; 
+  padding: 4px 8px;
+  border-radius: 6px;
+}
