@@ -8,7 +8,7 @@ Este repositorio contiene un proyecto de E-commerce de Suplementos realizado par
 
 1. Clonar el repositorio
 ```bash
-git clone https://github.com/natiortu/react.git
+git clone https://github.com/natiortu/react-coderhouse.git
 ```
 
 2. Moverse a la carpeta del proyecto e instalar dependencias
