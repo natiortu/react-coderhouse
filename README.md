@@ -13,7 +13,7 @@ git clone https://github.com/natiortu/react-coderhouse.git
 
 2. Moverse a la carpeta del proyecto e instalar dependencias
 ```bash
-cd react
+cd react-coderhouse
 npm install
 ```
 
