@@ -21,3 +21,9 @@ npm install
 ```bash
 npm run dev
 ```
+
+# Librerías utilizadas
+
+* [React Bootstrap](https://react-bootstrap.netlify.app/): utilizada para el styling de la app
+* [React Router Dom](https://reactrouter.com/): utilizada para la navegación por rutas
+* [Firebase](https://firebase.google.com/): utilizada como base de datos
